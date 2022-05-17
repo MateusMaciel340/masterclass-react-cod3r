@@ -8,19 +8,33 @@ import Repeticao from "./components/basicos/Repeticao";
 import Condicional from "./components/basicos/Condicional";
 import CondicionalComIf from "./components/basicos/Condicional";
 
+import Pai from "./components/comunicacao/direta/Pai";
+import Super from "./components/comunicacao/indireta/Super";
+
+import Input from "./components/form/Input";
+
 function App() {
   return (
       <div className="App">
-        <Card titulo="#06 - Componente Condicional v2">
+        <Card titulo="#09 - Componente Input" color="#9C0F5F">
+            <Input></Input>
+        </Card>
+        <Card titulo="#08 - Componente Comunicação Indireta" color="#000">
+            <Super></Super>
+        </Card>
+        <Card titulo="#07 - Componente Comunicação Direta">
+            <Pai sobrenome="Freitas"></Pai>
+        </Card>
+        <Card titulo="#06 - Componente Condicional v2" color="#FA6900">
             <CondicionalComIf numero={11}></CondicionalComIf>
         </Card>
-        <Card titulo="#05 - Componente Condicional v1">
+        <Card titulo="#05 - Componente Condicional v1" color="#E94C6F">
             <Condicional numero={10}></Condicional>
         </Card>
-        <Card titulo="#04 - Componente Repetição">
+        <Card titulo="#04 - Componente Repetição" color="#008BBA">
             <Repeticao></Repeticao>
         </Card>
-        <Card titulo="#03 - Componente com Filhos">
+        <Card titulo="#03 - Componente com Filhos" color="#D96459">
             <ComFilhos>
                 <ul>
                     <li>Ana</li>
@@ -30,11 +44,11 @@ function App() {
                 </ul>
             </ComFilhos>
         </Card>
-        <Card titulo="#02 - Componente com Parâmetro">
+        <Card titulo="#02 - Componente com Parâmetro" color="#FF85CB"> 
             <ComParametro titulo="Esse é o título"
             subtitulo="Esse é o subtitulo"></ComParametro>
         </Card>
-        <Card titulo="#01 - Primeiro Componente">
+        <Card titulo="#01 - Primeiro Componente" color="#92B06A">
             <Primeiro/>
         </Card>
       </div>
