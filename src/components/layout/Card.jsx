@@ -4,7 +4,7 @@ import React from "react";
 function Card(props){
     return(
         <div className="Card">
-            <div className="Conteudo">
+            <div className="Content">
                 {props.children}
             </div>
             <div className="Footer">
