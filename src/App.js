@@ -14,12 +14,17 @@ import Super from "./components/comunicacao/indireta/Super";
 import Input from "./components/form/Input";
 import Contador from "./components/contador/Contador";
 
+import MegaSena from "./components/mega/Mega";
+
 function App() {
   return (
       <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="#11 - Componente Mega Sena" color="#73503C">
+                <MegaSena qtdNumero={8}></MegaSena>
+            </Card>
             <Card titulo="#10 - Componente Contador" color="#293E6A">
                 <Contador passo={10} valor={100}></Contador>
             </Card>
